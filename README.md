@@ -4,16 +4,22 @@ SpendwiseAI is an AI-powered full-stack personal finance management platform to 
 
 ---
 
-## Features
+## Tech Stack
 
-- ✅ **Multi-Account Expense Tracking**
-- ✅ **AI-Powered Smart Categorization**
-- ✅ **Receipt Scanning with AI Integration**
-- ✅ **Budget Management with Email Alerts**
-- ✅ **Interactive Financial Visualizations**
-- ✅ **Monthly AI-Generated Financial Reports**
-- ✅ **Modern, Responsive UI with Next.js & Shadcn/UI**
+| Technology        | Purpose                                               |
+|-------------------|--------------------------------------------------------|
+| **React 19**      | Modern component-based UI library                     |
+| **Next.js 15**    | Full-stack framework with app router & server actions |
+| **Tailwind CSS**  | Utility-first CSS for rapid styling                   |
+| **Supabase**      | Open-source Firebase alternative (PostgreSQL backend) |
+| **Prisma**        | Type-safe ORM for PostgreSQL                          |
+| **Clerk**         | Authentication and user management                    |
+| **Inngest**       | Background jobs and serverless workflows              |
+| **Arcjet**        | Secure serverless edge runtime & performance          |
+| **shadcn/ui**     | Beautiful and customizable UI components              |
+| **OpenAI API**    | AI smart categorization, summaries, and receipt scan  |
 
+---
 ---
 
 ## Tech Stack
@@ -25,14 +31,41 @@ SpendwiseAI is an AI-powered full-stack personal finance management platform to 
 - **Email Notifications:** Nodemailer / SendGrid
 - **Charts & Graphs:** Recharts / Chart.js
 ## 📂 Project Structure
-SpendwiseAI/
-├── app/               # Application routes and pages
-├── components/ui/     # Reusable UI components (Shadcn/UI)
-├── lib/               # Utility functions and helpers
-├── public/            # Static assets (images, icons, etc.)
-├── middleware.js      # Middleware configuration
-├── next.config.mjs    # Next.js configuration
-├── package.json       # Project metadata and dependencies
+```
+FullStackReact_Project/
+│
+├── app/ # Main Next.js application
+│ ├── layout.js # Global layout configuration
+│ ├── page.js # Landing or main page
+│ └── (auth)/ # Authentication routes
+│ ├── sign-in/
+│ │ └── page.jsx
+│ └── sign-up/
+│ └── page.jsx
+│
+├── components/ # UI components
+│ └── ui/ # Modular & reusable UI components
+│ ├── button.jsx
+│ ├── card.jsx
+│ ├── drawer.jsx
+│ ├── header.jsx
+│ └── ...
+│
+├── lib/ # Shared libraries & utilities
+│ └── utils.js # Utility functions (e.g., cn)
+│
+├── public/ # Public static assets (SVGs, PNGs)
+│ └── logo.png, globe.svg, etc.
+│
+├── styles/ or global.css # Global styles (Tailwind or custom)
+│
+├── .env # Environment variables
+├── .gitignore
+├── package.json # Project metadata and dependencies
+├── README.md # Project documentation
+└── next.config.mjs # Next.js configuration
+```
+
 
 ## Getting Started
 
@@ -53,6 +86,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Why This Project?
+
+This is the **ultimate resume project** to:
+
+- Demonstrate full-stack proficiency
+- Showcase modern AI integration
+- Build a production-ready, scalable finance platform
 
 ## Learn More
 
