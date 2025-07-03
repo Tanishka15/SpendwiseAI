@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <main className="min-h-screen">{children}</main>
         <footer className="bg-gray-800 text-white p-4 mt-8">
           <div>
-          <p>&copy; 2023 Welth. All rights reserved.</p>
+          <p>&copy; 2025 SpendwiseAI. All rights reserved.</p>
          
          </div>
         </footer>
